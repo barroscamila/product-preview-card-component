@@ -12,10 +12,114 @@
 
     --font1: 'Montserrat', sans-serif;
     --font2: 'Fraunces', serif;
+
+    font-size: 14px;
 }
 
-body {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.card-1 {
+    background-image: url("../images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-2 {
+    padding: 30px;
+}
+
+.product-type {
+    font-family: var(--font1);
+    font-size: 1rem;
+    color: var(--light-blue);
+    padding: 0.8rem 0rem;
+}
+
+.product-title {
+    font-family: var(--font2);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: var(--dark-blue);
+    padding: 1rem 0rem;
+}
+
+.product-description {
+    font-family: var(--font1);
+    font-size: 1rem;
+    color: var(--light-blue);
+    line-height: 1.7rem;
+    padding: 0.8rem 0rem;
+}
+
+.product-price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1.7rem;
+    align-items: center;
+}
+
+.price-1 {
+    color: var(--cyan);
+    font-size: 2.5rem;
+    font-family: var(--font2);
+}
+
+.price-2 {
+    font-family: var(--font1);
+    color: var(--light-blue);
+    text-decoration: line-through;
+    padding-left: 1.2rem;
+}
+
+.addToCartBtn {
+    width: 240px;
+    background-color: var(--cyan);
+    font-family: var(--font1);
+    color: var(--white);
+    margin-top: 1.7rem;
+    padding: 1.1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer {
+    font-family: var(--font1);
+    color: var(--dark-blue);
+    margin-top: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
